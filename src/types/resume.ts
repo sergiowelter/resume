@@ -12,6 +12,7 @@ export interface Resume {
     summary: string;
   };
 
+  profile: string;
   skills: string[];
 
   experience: Experience[];
@@ -26,6 +27,7 @@ export interface Resume {
 export interface Experience {
   company: string;
   role: string;
+  location?: string;
   startDate: string;
   endDate: string;
   description: string;
