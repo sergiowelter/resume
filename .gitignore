@@ -35,6 +35,9 @@ dist-ssr
 # Test coverage
 coverage/
 
+# Local profile photo
+public/photos/profile.jpg
+
 # Tool caches
 .eslintcache
 .cache/
