@@ -1,0 +1,132 @@
+.portfolio-template {
+  min-height: 100vh;
+  color: #253330;
+  background: #f4f3ed;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.portfolio-content {
+  width: min(100% - 3rem, 900px);
+  margin-inline: auto;
+  padding-block: 1rem 4rem;
+}
+
+.portfolio-section {
+  padding-block: 2.5rem;
+  border-bottom: 1px solid #d8ded8;
+  scroll-margin-top: 1rem;
+}
+
+.portfolio-section h2 {
+  margin: 0 0 1.25rem;
+  color: #183b3a;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.portfolio-section h3 {
+  margin: 0;
+  color: #183b3a;
+  font-size: 1.15rem;
+}
+
+.portfolio-section p {
+  line-height: 1.7;
+}
+
+.portfolio-section__eyebrow {
+  margin: 0 0 0.5rem;
+  color: #9a6824;
+  font-family: Arial, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.portfolio-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.portfolio-entry + .portfolio-entry {
+  padding-top: 1.5rem;
+  border-top: 1px solid #d8ded8;
+}
+
+.portfolio-entry__heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.portfolio-entry__subtitle,
+.portfolio-entry__meta {
+  color: #53645f;
+  font-family: Arial, sans-serif;
+  font-size: 0.875rem;
+}
+
+.portfolio-entry__subtitle {
+  margin: 0.25rem 0;
+}
+
+.portfolio-entry__meta {
+  flex-shrink: 0;
+}
+
+.portfolio-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+  list-style: none;
+  font-family: Arial, sans-serif;
+}
+
+.portfolio-tags li {
+  padding: 0.3rem 0.6rem;
+  border: 1px solid #c4d0c9;
+  border-radius: 4px;
+  color: #34514c;
+  font-size: 0.8rem;
+}
+
+.portfolio-tags--skills {
+  margin: 0;
+}
+
+.portfolio-entry a {
+  color: #80541e;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+}
+
+.portfolio-footer {
+  padding: 1.5rem;
+  color: #d7e5e0;
+  background: #183b3a;
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.portfolio-footer p {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .portfolio-content {
+    width: min(100% - 2rem, 900px);
+  }
+
+  .portfolio-entry__heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .portfolio-entry__meta {
+    margin: 0;
+  }
+}

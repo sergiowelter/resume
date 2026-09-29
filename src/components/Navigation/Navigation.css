@@ -1,0 +1,23 @@
+.portfolio-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.5rem;
+  padding: 0.9rem clamp(1.5rem, 6vw, 5rem);
+  border-bottom: 1px solid #d8ded8;
+  background: #fff;
+}
+
+.portfolio-navigation a {
+  padding-block: 0.45rem;
+  color: #34514c;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.portfolio-navigation a:hover,
+.portfolio-navigation a:focus-visible {
+  color: #9a6824;
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
